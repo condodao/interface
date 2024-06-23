@@ -1,9 +1,9 @@
 import { createConfig, http } from "wagmi";
-import { anvil } from "wagmi/chains";
+import { scrollSepolia } from "wagmi/chains";
 
 export const config = createConfig({
-  chains: [anvil],
+  chains: [scrollSepolia],
   transports: {
-    [anvil.id]: http(),
+    [scrollSepolia.id]: http(),
   },
 });
